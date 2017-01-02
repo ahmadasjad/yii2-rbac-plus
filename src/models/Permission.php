@@ -8,7 +8,7 @@ use yii\rbac\Item;
 /**
  * Description of Permistion
  *
- * @author John Martin <john.itvn@gmail.com>
+ * @author Ahmad Asjad <ahmadcimage@gmail.com>
  * @since 1.0.0
  */
 class Permission extends AuthItem {

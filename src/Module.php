@@ -8,7 +8,7 @@ use yii\base\Module as BaseModule;
 /**
  * Description of Module
  *
- * @author John Martin <john.itvn@gmail.com>
+ * @author Ahmad Asjad <ahmadcimage@gmail.com>
  * @since 1.0.0
  */
 class Module extends BaseModule {

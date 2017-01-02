@@ -6,7 +6,7 @@ use Yii;
 use yii\rbac\Item;
 
 /**
- * @author John Martin <john.itvn@gmail.com>
+ * @author Ahmad Asjad <ahmadcimage@gmail.com>
  * @since 1.0.0
  */
 class PermissionSearch extends AuthItemSearch {

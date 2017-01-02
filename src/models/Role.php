@@ -6,7 +6,7 @@ use Yii;
 use yii\rbac\Item;
 
 /**
- * @author John Martin <john.itvn@gmail.com>
+ * @author <ahmadcimage@gmail.com> <john.itvn@gmail.com>
  * @since 1.0.0
  */
 class Role extends AuthItem {

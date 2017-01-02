@@ -13,7 +13,7 @@ use ahmadasjad\rbacplus\models\AssignmentForm;
 /**
  * AssignmentController is controller for manager user assignment
  *
- * @author John Martin <john.itvn@gmail.com>
+ * @author Ahmad Asjad <ahmadcimage@gmail.com>
  * @since 1.0.0
  */
 class AssignmentController extends Controller {

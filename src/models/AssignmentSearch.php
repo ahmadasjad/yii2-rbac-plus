@@ -7,7 +7,7 @@ use yii\data\ActiveDataProvider;
 use ahmadasjad\rbacplus\Module;
 
 /**
- * @author John Martin <john.itvn@gmail.com>
+ * @author Ahmad Asjad <ahmadcimage@gmail.com>
  * @since 1.0.0
  *
  */

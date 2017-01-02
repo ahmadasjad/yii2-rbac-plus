@@ -14,7 +14,7 @@ use ahmadasjad\rbacplus\models\RuleSearch;
 /**
  * RuleController is controller for manager rule
  *
- * @author John Martin <john.itvn@gmail.com>
+ * @author Ahmad Asjad <ahmadcimage@gmail.com>
  * @since 1.0.0
  */
 class RuleController extends Controller {

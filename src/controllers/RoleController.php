@@ -13,7 +13,7 @@ use ahmadasjad\rbacplus\models\RoleSearch;
 
 /**
  * RoleController is controller for manager role
- * @author John Martin <john.itvn@gmail.com>
+ * @author Ahmad Asjad <ahmadcimage@gmail.com>
  * @since 1.0.0
  */
 class RoleController extends Controller {

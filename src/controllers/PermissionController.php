@@ -13,7 +13,7 @@ use ahmadasjad\rbacplus\models\PermissionSearch;
 
 /**
  * PermissionController is controller for manager permissions
- * @author John Martin <john.itvn@gmail.com>
+ * @author Ahmad Asjad <ahmadcimage@gmail.com>
  * @since 1.0.0
  */
 class PermissionController extends Controller {

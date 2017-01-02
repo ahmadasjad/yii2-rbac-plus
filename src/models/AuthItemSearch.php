@@ -6,7 +6,7 @@ use yii\data\ArrayDataProvider;
 use yii\rbac\Item;
 
 /**
- * @author John Martin <john.itvn@gmail.com>
+ * @author Ahmad Asjad <ahmadcimage@gmail.com>
  * @since 1.0.0
  */
 abstract class AuthItemSearch extends AuthItem {

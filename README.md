@@ -7,6 +7,8 @@ yii2-rbac-plus
 [![Daily Downloads](https://poser.pugx.org/ahmadasjad/yii2-rbac-plus/d/daily)](https://packagist.org/packages/ahmadasjad/yii2-rbac-plus)
 
 Database role base access control manager for yii2
+Actually, this is duplicate repo of https://github.com/johnitvn/yii2-rbac-plus
+Due to not being active and pulling request of contributor or listening to them, I created this one.
 
 
 Features

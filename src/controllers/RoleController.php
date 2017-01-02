@@ -1,6 +1,6 @@
 <?php
 
-namespace johnitvn\rbacplus\controllers;
+namespace ahmadasjad\rbacplus\controllers;
 
 use Yii;
 use yii\web\Controller;
@@ -8,8 +8,8 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\web\Response;
 use yii\helpers\Html;
-use johnitvn\rbacplus\models\Role;
-use johnitvn\rbacplus\models\RoleSearch;
+use ahmadasjad\rbacplus\models\Role;
+use ahmadasjad\rbacplus\models\RoleSearch;
 
 /**
  * RoleController is controller for manager role
@@ -95,7 +95,7 @@ class RoleController extends Controller {
                     Html::button(Yii::t('rbac', 'Save'), ['class' => 'btn btn-primary', 'type' => "submit"])
                 ];
             } else if ($model->load($request->post()) && $model->save()) {
-//                \johnitvn\userplus\Helper::dump($model);
+//                \ahmadasjad\userplus\Helper::dump($model);
                 return [
                     'forceReload' => 'true',
                     'title' => Yii::t('rbac', "Create new {0}", ["Role"]),

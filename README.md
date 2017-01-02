@@ -1,10 +1,10 @@
 yii2-rbac-plus
 =============
-[![Latest Stable Version](https://poser.pugx.org/johnitvn/yii2-rbac-plus/v/stable)](https://packagist.org/packages/johnitvn/yii2-rbac-plus)
-[![License](https://poser.pugx.org/johnitvn/yii2-rbac-plus/license)](https://packagist.org/packages/johnitvn/yii2-rbac-plus)
-[![Total Downloads](https://poser.pugx.org/johnitvn/yii2-rbac-plus/downloads)](https://packagist.org/packages/johnitvn/yii2-rbac-plus)
-[![Monthly Downloads](https://poser.pugx.org/johnitvn/yii2-rbac-plus/d/monthly)](https://packagist.org/packages/johnitvn/yii2-rbac-plus)
-[![Daily Downloads](https://poser.pugx.org/johnitvn/yii2-rbac-plus/d/daily)](https://packagist.org/packages/johnitvn/yii2-rbac-plus)
+[![Latest Stable Version](https://poser.pugx.org/ahmadasjad/yii2-rbac-plus/v/stable)](https://packagist.org/packages/ahmadasjad/yii2-rbac-plus)
+[![License](https://poser.pugx.org/ahmadasjad/yii2-rbac-plus/license)](https://packagist.org/packages/ahmadasjad/yii2-rbac-plus)
+[![Total Downloads](https://poser.pugx.org/ahmadasjad/yii2-rbac-plus/downloads)](https://packagist.org/packages/ahmadasjad/yii2-rbac-plus)
+[![Monthly Downloads](https://poser.pugx.org/ahmadasjad/yii2-rbac-plus/d/monthly)](https://packagist.org/packages/ahmadasjad/yii2-rbac-plus)
+[![Daily Downloads](https://poser.pugx.org/ahmadasjad/yii2-rbac-plus/d/daily)](https://packagist.org/packages/ahmadasjad/yii2-rbac-plus)
 
 Database role base access control manager for yii2
 
@@ -14,7 +14,7 @@ Features
 + CRUD operations for roles, permissions and rules
 + Allows to assign multiple roles to user
 + Nice views to intergrate right away
-+ Integrated with [Yii2-user-plus](https://github.com/johnitvn/yii2-user-plus) - flexible user management module
++ Integrated with [Yii2-user-plus](https://github.com/ahmadasjad/yii2-user-plus) - flexible user management module
 
 <img src="http://s17.postimg.org/8p7idb9jz/screencapture_fastandfurious_dev_apps_test_user.png" alt="Yii2 RBAC manager" width="640">
 
@@ -27,13 +27,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist johnitvn/yii2-rbac-plus "*"
+php composer.phar require --prefer-dist ahmadasjad/yii2-rbac-plus "*"
 ```
 
 or add
 
 ```
-"johnitvn/yii2-rbac-plus": "*"
+"ahmadasjad/yii2-rbac-plus": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -51,12 +51,12 @@ Usage
 ],
 'modules' => [
     'rbac' =>  [
-        'class' => 'johnitvn\rbacplus\Module'
-    ]       
+        'class' => 'ahmadasjad\rbacplus\Module'
+    ]
 ]
 ````
 
-Next, update the database schema 
+Next, update the database schema
 
 ````
 $ php yii migrate/up --migrationPath=@yii/rbac/migrations
@@ -74,7 +74,7 @@ Ok. That's done. Avaiable route now:
 ````
 'modules' => [
     'rbac' =>  [
-        'class' => 'johnitvn\rbacplus\Module',
+        'class' => 'ahmadasjad\rbacplus\Module',
         'userModelClassName'=>null,
         'userModelIdField'=>'id',
         'userModelLoginField'=>'username',
@@ -82,7 +82,7 @@ Ok. That's done. Avaiable route now:
         'userModelExtraDataColumls'=>null,
         'beforeCreateController'=>null,
         'beforeAction'=>null
-    ]       
+    ]
 ]
 ````
 
@@ -96,7 +96,7 @@ Ok. That's done. Avaiable route now:
  If you set null the label will get from `$userModelClass->attributeLabels()[$userModelLoginField]`
 + <b>userModelExtraDataColumls</b> The extra data columns you want to show in user assign views.<br>
  The default in assignment data gridview just display id and login column data. if you want to add created_at column you can add
-````php 
+````php
 'userModelExtraDataColumls'=>[
     [
         'attributes'=>'created_at',
@@ -113,7 +113,7 @@ Example:
 'beforeCreateController'=>function($route){
     /**
     *@var string $route The route consisting of module, controller and action IDs.
-    */    
+    */
 }
 ````
 + <b>beforeAction</b>The callable before action of all controller in <b>Rbac Plus</b> module.<BR>
@@ -123,6 +123,6 @@ Example:
 'beforeAction'=>function($action){
     /**
     *@var yii\base\Action $action the action to be executed.
-    */    
+    */
 }
 ````

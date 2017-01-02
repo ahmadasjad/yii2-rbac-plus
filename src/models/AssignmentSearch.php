@@ -1,15 +1,15 @@
 <?php
 
-namespace johnitvn\rbacplus\models;
+namespace ahmadasjad\rbacplus\models;
 
 use Yii;
 use yii\data\ActiveDataProvider;
-use johnitvn\rbacplus\Module;
+use ahmadasjad\rbacplus\Module;
 
 /**
  * @author John Martin <john.itvn@gmail.com>
  * @since 1.0.0
- * 
+ *
  */
 class AssignmentSearch extends \yii\base\Model {
 
@@ -58,7 +58,7 @@ class AssignmentSearch extends \yii\base\Model {
     }
 
     /**
-     * Create data provider for Assignment model.    
+     * Create data provider for Assignment model.
      */
     public function search() {
         $query = call_user_func($this->rbacModule->userModelClassName . "::find");
@@ -70,7 +70,7 @@ class AssignmentSearch extends \yii\base\Model {
         if (!($this->load($params) && $this->validate())) {
             return $dataProvider;
         }
-        
+
         $query->andFilterWhere([$this->usersModule->userModelIdField => $this->id]);
         $query->andFilterWhere(['like', $this->rbacModule->userModelLoginField, $this->login]);
 

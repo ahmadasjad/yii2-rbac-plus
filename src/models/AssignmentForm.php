@@ -1,6 +1,6 @@
 <?php
 
-namespace johnitvn\rbacplus\models;
+namespace ahmadasjad\rbacplus\models;
 
 use Yii;
 use yii\base\Model;
@@ -16,9 +16,9 @@ class AssignmentForm extends Model {
     public $authManager;
 
     /**
-     * 
+     *
      * @param mixed $userId The id of user use for assign
-     * @param array $config 
+     * @param array $config
      */
     public function __construct($userId, $config = array()) {
         parent::__construct($config);

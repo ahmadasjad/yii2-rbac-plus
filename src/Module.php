@@ -1,6 +1,6 @@
 <?php
 
-namespace johnitvn\rbacplus;
+namespace ahmadasjad\rbacplus;
 
 use Yii;
 use yii\base\Module as BaseModule;
@@ -37,26 +37,26 @@ class Module extends BaseModule {
     /**
      *
      * @var string $userModelLoginFieldLabel The login field's label of user model.
-     * Default is Username  
+     * Default is Username
      */
     public $userModelLoginFieldLabel;
 
     /**
      *
      * @var array|null $userModelExtraDataColumks the array of extra colums of user model want to show in
-     * assignment index view. 
+     * assignment index view.
      */
     public $userModelExtraDataColumls;
 
     /**
      * Callback before create controller
-     * @var mixed 
+     * @var mixed
      */
     public $beforeCreateController = null;
 
     /**
      * Callback before create action
-     * @var type 
+     * @var type
      */
     public $beforeAction = null;
 

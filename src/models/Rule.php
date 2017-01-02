@@ -1,6 +1,6 @@
 <?php
 
-namespace johnitvn\rbacplus\models;
+namespace ahmadasjad\rbacplus\models;
 
 use Yii;
 use yii\base\Model;
@@ -13,7 +13,7 @@ class Rule extends Model {
 
     /**
      *
-     * @var string 
+     * @var string
      */
     public $name;
 
@@ -28,7 +28,7 @@ class Rule extends Model {
     private $item;
 
     /**
-     * @var boolean 
+     * @var boolean
      */
     public $isNewRecord = true;
 

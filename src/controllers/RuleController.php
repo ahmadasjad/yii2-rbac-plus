@@ -1,6 +1,6 @@
 <?php
 
-namespace johnitvn\rbacplus\controllers;
+namespace ahmadasjad\rbacplus\controllers;
 
 use Yii;
 use yii\web\Controller;
@@ -8,8 +8,8 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\web\Response;
 use yii\helpers\Html;
-use johnitvn\rbacplus\models\Rule;
-use johnitvn\rbacplus\models\RuleSearch;
+use ahmadasjad\rbacplus\models\Rule;
+use ahmadasjad\rbacplus\models\RuleSearch;
 
 /**
  * RuleController is controller for manager rule

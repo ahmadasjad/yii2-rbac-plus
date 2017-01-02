@@ -1,5 +1,5 @@
 <?php
-namespace johnitvn\rbacplus\models;
+namespace ahmadasjad\rbacplus\models;
 
 use Yii;
 use yii\data\ArrayDataProvider;
@@ -36,7 +36,7 @@ abstract class AuthItemSearch extends AuthItem {
         } else {
             $items = $authManager->getPermissions();
         }
-        
+
         if ($this->load($params) && $this->validate() && (trim($this->name) !== '' || trim($this->description) !== '')) {
             $search = strtolower(trim($this->name));
             $desc = strtolower(trim($this->description));

@@ -1,21 +1,21 @@
 {
-    "name": "johnitvn/yii2-rbac-plus",
+    "name": "ahmadasjad/yii2-rbac-plus",
     "description":"Database role base access control manager for yii2",
     "type": "yii2-extension",
     "license": "Apache-2.0",
     "authors": [
         {
-            "name": "John Martin",
-            "email": "john.itvn@gmail.com",
-            "homepage": "https://github.com/johnitvn?tab=repositories"
+            "name": "Ahmad Asjad",
+            "email": "ahmadcimage@gmail.com",
+            "homepage": "https://github.com/ahmadasjad"
         }
-    ],    
+    ],
     "support": {
-        "issues": "https://github.com/johnitvn/yii2-rbac-plus/issues?state=open",
-        "source": "https://github.com/johnitvn/yii2-rbac-plus"
+        "issues": "https://github.com/ahmadasjad/yii2-rbac-plus/issues?state=open",
+        "source": "https://github.com/ahmadasjad/yii2-rbac-plus"
     },
     "suggest": {
-        "johnitvn/yii2-user-plus": "High flexible user management extension for yii2"
+        "ahmadasjad/yii2-user-plus": "High flexible user management extension for yii2"
     },
     "minimum-stability": "dev",
     "require": {
@@ -24,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "johnitvn\\rbacplus\\": "src/"
+            "ahmadasjad\\rbacplus\\": "src/"
         }
     },
     "extra": {

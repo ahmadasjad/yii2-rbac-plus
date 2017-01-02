@@ -1,6 +1,6 @@
 <?php
 
-namespace johnitvn\rbacplus\models;
+namespace ahmadasjad\rbacplus\models;
 
 use Yii;
 use yii\data\ArrayDataProvider;
@@ -13,7 +13,7 @@ class RuleSearch extends Rule {
 
     /**
      *
-     * @var string 
+     * @var string
      */
     public $name;
 

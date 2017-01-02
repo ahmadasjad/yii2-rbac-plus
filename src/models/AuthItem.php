@@ -1,6 +1,6 @@
 <?php
 
-namespace johnitvn\rbacplus\models;
+namespace ahmadasjad\rbacplus\models;
 
 use Yii;
 use yii\base\Model;
@@ -97,7 +97,7 @@ abstract class AuthItem extends Model {
         //$this->beforeSave();
         $authManager = Yii::$app->authManager;
 
-        // Create new item    
+        // Create new item
         if ($this->getType() == Item::TYPE_ROLE) {
             $item = $authManager->createRole($this->name);
         } else {
@@ -158,7 +158,7 @@ abstract class AuthItem extends Model {
 
         $authManager = Yii::$app->authManager;
 
-        // Create new item    
+        // Create new item
         if ($this->getType() == Item::TYPE_ROLE) {
             $item = $authManager->getRole($this->name);
         } else {
@@ -170,7 +170,7 @@ abstract class AuthItem extends Model {
 
     /**
      * Get the type of item
-     * @return integer 
+     * @return integer
      */
     protected abstract function getType();
 }

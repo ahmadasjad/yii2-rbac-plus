@@ -17,14 +17,8 @@ CrudAsset::register($this);
 ?>
 <div id="second-menu" class="clearfix col-sm-3">
     <?php
-    $menuItems = [
-        ['label' => 'Role', 'url' => ['/rbac/role']],
-        ['label' => 'Permission', 'url' => ['/rbac/permission']],
-        ['label' => 'Rule', 'url' => ['/rbac/rule']],
-        ['label' => 'Assignment', 'url' => ['/rbac/assignment']],
-    ];
     echo Nav::widget([
-        'items' => $menuItems,
+        'items' => require_once(dirname(dirname(__FILE__)) . '/common/side_menu.php'),
     ]);
     ?>
 </div>

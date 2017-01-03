@@ -54,12 +54,19 @@ class Role extends AuthItem {
                 $authManager->addChild($role, $permistion);
             }
         }
+        if ($this->roles != null && is_array($this->roles)) {
+            foreach ($this->roles as $roleName) {
+                $childRole = $authManager->getPermission($roleName);
+                $authManager->addChild($role, $childRole);
+            }
+        }
     }
 
     public function attributeLabels() {
         $labels = parent::attributeLabels();
         $labels['name'] = Yii::t('rbac', 'Role name');
         $labels['permissions'] = Yii::t('rbac', 'Permissions');
+        $labels['roles'] = Yii::t('rbac', 'Roles');
         return $labels;
     }
 

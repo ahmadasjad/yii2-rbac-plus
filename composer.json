@@ -15,7 +15,7 @@
         "source": "https://github.com/ahmadasjad/yii2-rbac-plus"
     },
     "suggest": {
-        "ahmadasjad/yii2-user-plus": "High flexible user management extension for yii2"
+        "johnitvn/yii2-user-plus": "High flexible user management extension for yii2"
     },
     "minimum-stability": "dev",
     "require": {
@@ -28,6 +28,6 @@
         }
     },
     "extra": {
-        "bootstrap": "johnitvn\\rbacplus\\Bootstrap"
+        "bootstrap": "ahmadasjad\\rbacplus\\Bootstrap"
     }
 }

@@ -17,8 +17,10 @@ CrudAsset::register($this);
 ?>
 <div id="second-menu" class="clearfix col-sm-3">
     <?php
+    
     echo Nav::widget([
         'items' => require_once(dirname(dirname(__FILE__)) . '/common/side_menu.php'),
+        'options' => ['class' =>'nav-pills  nav-stacked'],
     ]);
     ?>
 </div>

@@ -1,6 +1,6 @@
 {
     "name": "ahmadasjad/yii2-rbac-plus",
-    "description":"Database role base access control manager for yii2",
+    "description": "Database role base access control manager for yii2",
     "type": "yii2-extension",
     "license": "Apache-2.0",
     "authors": [
@@ -20,7 +20,8 @@
     "minimum-stability": "dev",
     "require": {
         "yiisoft/yii2": ">=2.0.4",
-        "johnitvn/yii2-ajaxcrud": ">=2.0.0"
+        "johnitvn/yii2-ajaxcrud": ">=2.0.0",
+        "kartik-v/yii2-grid": "@dev"
     },
     "autoload": {
         "psr-4": {

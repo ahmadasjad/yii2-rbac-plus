@@ -84,7 +84,7 @@ class Rule extends Model {
         $message = null;
         if (!class_exists($this->className)) {
             $message = 'Class "{className}" not exist';
-        } else if (!is_subclass_of($this->className, yii\rbac\Rule::className())) {
+        } else if (!is_subclass_of($this->className, \yii\rbac\Rule::className())) {
             $message = 'Class "{className}" must extends yii\rbac\Rule';
         } else if ((new $this->className())->name === null) {
             $message = 'The "{className}::\$name" is not set';
